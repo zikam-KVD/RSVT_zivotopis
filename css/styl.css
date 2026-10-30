@@ -1,0 +1,97 @@
+* {     /* Upravuje všechny elementy */
+    font-size: 15px;
+    padding: 0;     /* Nulování kvůli marginu u body */
+    margin: 0;
+}
+
+img {
+    max-width: 100%;    /* Obrázek nepřeteče rodiče, pokud je větší než jeho prostor */
+}
+
+body {
+    background-color: white;
+}
+
+span.fa-solid.fa-robot.fa-4x {
+    color: White;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.55rem 2rem;  /* vlevo-vpravo nahoře-dole */
+    /* padding: 5px; 5px všude */
+    /* padding: 15px 5px 15px 5px; nahore vpravo dole vlevo */
+    background-color: darkgrey;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+nav {
+    display: flex;
+    gap: 2.5rem;    /* 15px * 2.5 */
+}
+nav a {
+    color: White;
+    text-transform: uppercase;
+    text-decoration: none;
+    /*margin: 10px */;
+    padding: 10px 8px;  /* Vytváří "velikost" tlačítka. */
+} 
+
+.active, nav a:hover {  /* :hover je pseudotřída */
+    background-color: brown;
+    border-radius: 8px;    
+}
+
+section {
+    min-height: 100vh;  /* view height; vw: view width  */
+}
+
+section#avatar {
+    background-color: dimgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: .5rem;
+    color: White;
+}
+section#avatar h1 {
+    font-size: 2rem;
+}
+
+section#avatar div#avatar {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    /*aspect-ratio: 1;    /* bude to čtverec */
+    border: 2px solid white;
+    overflow: hidden;   /* skryje přeteky obrázku */
+} 
+
+.social{
+    display: flex;
+    gap:2rem;
+}
+
+.social a {
+    background-color: brown;
+    padding: 8px;
+    border-radius: 50%;
+    color: white;
+    border: 1.5px solid brown;
+    transition: background 2s ease;
+}
+.social a:hover {
+    background-color: transparent;    
+}
+
+section#about {
+    background-color: transparent;
+}
+section#skills {
+    background-color: rgb(62, 54, 54);
+}
